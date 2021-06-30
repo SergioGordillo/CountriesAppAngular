@@ -5,6 +5,7 @@
     <div class="col">
         <app-countries-input
             (onEnter)="search($event)"
+            (onDebounce)="suggest($event)"
         ></app-countries-input>
     </div>
 </div>

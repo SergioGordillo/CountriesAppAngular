@@ -31,6 +31,13 @@ export class ByCountryComponent {
       });
   }
 
+  suggest(term:string){
+    this.foundError=false;
+    //TODO: create suggestions
+
+
+  }
+
  
 
 }
