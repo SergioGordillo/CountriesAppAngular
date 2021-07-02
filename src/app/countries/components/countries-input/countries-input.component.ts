@@ -20,8 +20,9 @@ export class CountriesInputComponent implements OnInit{
 
   ngOnInit(){
     this.debouncer
-      .pipe(debounceTime(3000))
+      .pipe(debounceTime(300))
       .subscribe(value=>{
+        console.log("Debouncer ", value);
         this.onDebounce.emit(value);
     });
   }
