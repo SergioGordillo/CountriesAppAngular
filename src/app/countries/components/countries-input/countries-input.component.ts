@@ -22,7 +22,6 @@ export class CountriesInputComponent implements OnInit{
     this.debouncer
       .pipe(debounceTime(300))
       .subscribe(value=>{
-        console.log("Debouncer ", value);
         this.onDebounce.emit(value);
     });
   }
@@ -32,7 +31,6 @@ export class CountriesInputComponent implements OnInit{
   }
 
   pressedKey(event:any){
-    console.log("hey");
     this.debouncer.next(this.term);
   }
 

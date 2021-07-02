@@ -20,4 +20,11 @@ export class CountriesService {
 
     return this.http.get<Country[]>(url);
   }
+
+  searchCountryByCapital(term:string):Observable<Country[]>{
+
+    const url=`${this.apiURL}/capital/${term}`;
+
+    return this.http.get<Country[]>(url);
+  }
 }

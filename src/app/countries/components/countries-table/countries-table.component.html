@@ -4,6 +4,7 @@
             <th>#</th>
             <th>Flag</th>
             <th>Name</th>
+            <th>Capital</th>
             <th>Population</th>
             <th></th>
         </tr>
@@ -19,6 +20,7 @@
                     >
             </td>
             <td>{{country.name}}</td>
+            <td>{{country.capital}}</td>
             <td>{{country.population | number}}</td>
             <td>
                 <a [routerLink]="['/country', country.alpha2Code]">Watch more</a>

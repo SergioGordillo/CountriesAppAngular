@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { Country } from '../../interfaces/country.interface';
+import { CountriesService } from '../../services/countries.service';
 
 @Component({
   selector: 'app-by-capital',
@@ -6,11 +8,36 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class ByCapitalComponent implements OnInit {
+export class ByCapitalComponent {
 
-  constructor() { }
+  term: string ="";
+  foundError: boolean=false;
+  countries: Country[]=[];
 
-  ngOnInit(): void {
+  constructor(private countriesService:CountriesService) { }
+
+  search(term:string){
+
+    this.foundError=false;
+    this.term=term; 
+
+    this.countriesService.searchCountryByCapital(this.term)
+      .subscribe((countries)=>{
+        console.log(countries);
+        this.countries=countries;
+      }, (err)=>{
+        this.foundError=true;
+        this.countries=[];
+      });
   }
+
+  suggest(term:string){
+    this.foundError=false;
+    //TODO: create suggestions
+
+
+  }
+
+
 
 }
