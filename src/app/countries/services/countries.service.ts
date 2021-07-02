@@ -15,16 +15,17 @@ export class CountriesService {
   constructor(private http:HttpClient) { }
 
   searchCountry(term:string):Observable<Country[]>{
-
     const url=`${this.apiURL}/name/${term}`;
-
     return this.http.get<Country[]>(url);
   }
 
   searchCountryByCapital(term:string):Observable<Country[]>{
-
     const url=`${this.apiURL}/capital/${term}`;
-
     return this.http.get<Country[]>(url);
+  }
+
+  getCountryByCode(code:string):Observable<Country>{
+    const url=`${this.apiURL}/alpha/${code}`;
+    return this.http.get<Country>(url);
   }
 }
