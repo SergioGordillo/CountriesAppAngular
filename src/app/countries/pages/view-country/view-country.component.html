@@ -12,18 +12,39 @@
 
     <div class="row">
         <div class="col-4">
-            <h3>Flag</h3>
+            <h3 class="mb-3">Flag</h3>
             <img [src]="country.flag" class="img-thumbnail"/>
 
         </div>
 
         <div class="col-4">
-            <h3>Information</h3>
+            <h3 class="mb-3">Information</h3>
             <ul class="list-group">
                 <li class="list-group-item"> 
                     <strong>Population</strong> {{country.population | number}}
                 </li>
+                <li class="list-group-item"> 
+                    <strong>Numeric code</strong> {{country.numericCode | number}}
+                </li>
+                <li class="list-group-item"> 
+                    <strong>Alpha 3 Code </strong> {{country.alpha3Code}}
+                </li>
             </ul>
+        </div>
+    </div>
+
+    <h3 class="mt-5">How can we say {{country.name}} in different languages?</h3>
+    <div class="row">
+        <div class="col">
+            <span class="badge bg-primary me-2">{{country.translations.de}}</span>
+            <span class="badge bg-primary me-2">{{country.translations.es}}</span>
+            <span class="badge bg-primary me-2">{{country.translations.fr}}</span>
+            <span class="badge bg-primary me-2">{{country.translations.ja}}</span>
+            <span class="badge bg-primary me-2">{{country.translations.it}}</span>
+            <span class="badge bg-primary me-2">{{country.translations.pt}}</span>
+            <span class="badge bg-primary me-2">{{country.translations.nl}}</span>
+            <span class="badge bg-primary me-2">{{country.translations.hr}}</span>
+            <span class="badge bg-primary me-2">{{country.translations.fa}}</span>
         </div>
     </div>
 </ng-template>
