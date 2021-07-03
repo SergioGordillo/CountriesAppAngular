@@ -1,16 +1,20 @@
-<h2>By Capital</h2>
-<hr/>
+<div class="animate__animated animate__fadeIn animate__faster">
+    <h2>By Capital</h2>
+    <hr/>
 
-<div class="row">
-    <div class="col">
-        <app-countries-input
-            (onEnter)="search($event)"
-            placeholder="Search by capital..."
-        ></app-countries-input>
+    <div class="row">
+        <div class="col">
+            <app-countries-input
+                (onEnter)="search($event)"
+                placeholder="Search by capital..."
+            ></app-countries-input>
+        </div>
     </div>
+
+    <hr/>
 </div>
 
-<hr/>
+
 
 <div 
     *ngIf="foundError"
