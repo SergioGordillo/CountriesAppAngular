@@ -14,7 +14,7 @@ This web app enables you to do:
 
 # Which technologies did I use to develop this app? :thinking:
 
-It is a web app made with Angular 12 + TypeScript + some basic CSS + Bootstrap 5 + Animate.CSS. <br>
+It is a web app made with Angular 12 + RxJS + TypeScript + some basic CSS + Bootstrap 5 + Animate.CSS. <br>
 I used Angular-CLI to create my Angular App. <br>
 
 # Which is the purpose of this web app? :thinking:
@@ -27,9 +27,9 @@ It is a web app I made based on Fernando Herrera Angular course 🧐. I havent m
 :heart: Some RxJS operators, like tap, debounceTime or switchMap. <br>
 :heart: Using CSS classes in a conditional way. <br>
 :heart: How to create a customized search suggestions table. <br>
-:heart: About HttpParams and good practices about how to do clean http requests. <br>
-:blue_heart: About TypeScript. <br>
-:art: About Bootstrap 5 and Animate.CSS. <br>
+:heart: HttpParams and good practices about how to do clean http requests. <br>
+:blue_heart: TypeScript. <br>
+:art: Bootstrap 5 and Animate.CSS. <br>
 
 
 # CountriesAppAngular
