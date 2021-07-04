@@ -1,3 +1,38 @@
+
+
+
+# Can I try this web app? :open_mouth:
+
+Yes, of course. You can try it at https://sergiogordillo.github.io/CountriesAppAngular/.
+
+# What can you do with this web app? :thinking:
+
+This web app enables you to do:
+
+:world_map: To search data of different countries using the REST Countries API (https://restcountries.eu/). <br>
+:globe_with_meridians: You can search countries filtering by country name, region or capital name. <br>
+:eyes: When looking for a country filtering by country name, you can choose the country using a search suggestions table that will appear on screen. <br>
+
+# Which technologies did I use to develop this app? :thinking:
+
+It is a web app made with Angular 12 + TypeScript + some basic CSS + Bootstrap 5 + Animate.CSS. <br>
+I used Angular-CLI to create my Angular App. <br>
+
+# Which is the purpose of this web app? :thinking:
+
+It is a web app I made based on Fernando Herrera Angular course 🧐. I havent made barely changes compared to the project that Fernando Herrera made on the course, but just because I want to learn and adquire the Angular knowledge 🤓. I know the styles are very basic, but I just focused on Angular stuff. I learnt with this project about:
+
+:heart: Good practices about making reusable components in Angular. <br>
+:heart: Good practices about Angular folder structure. <br>
+:heart: Using Router Module and RouterLink. <br>
+:heart: Some RxJS operators, like tap, debounceTime or switchMap. <br>
+:heart: Using CSS classes in a conditional way. <br>
+:heart: How to create a customized search suggestions table. <br>
+:heart: About HttpParams and good practices about how to do clean http requests. <br>
+:blue_heart: About TypeScript. <br>
+:art: About Bootstrap 5 and Animate.CSS. <br>
+
+
 # CountriesAppAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
