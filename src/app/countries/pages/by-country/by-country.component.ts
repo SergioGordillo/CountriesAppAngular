@@ -5,14 +5,18 @@ import { CountriesService } from '../../services/countries.service';
 @Component({
   selector: 'app-by-country',
   templateUrl: './by-country.component.html',
-  styles: [
-  ]
+  styles: [`
+    li{
+      cursor: pointer;
+    }
+  `]
 })
 export class ByCountryComponent {
 
   term: string ="";
   foundError: boolean=false;
   countries: Country[]=[];
+  suggestedCountries: Country[]=[];
 
   constructor(private countriesService:CountriesService) { }
 
@@ -32,7 +36,14 @@ export class ByCountryComponent {
 
   suggest(term:string){
     this.foundError=false;
-    //TODO: create suggestions
+    
+    this.countriesService.searchCountry(term)
+      .subscribe(
+        countries=>this.suggestedCountries=countries.splice(0,5),
+        (err)=>{this.suggestedCountries=[]}
+      );
+   
+      
 
 
   }
