@@ -4,6 +4,8 @@
 
 Yes, of course. You can try it at https://sergiogordillo.github.io/CountriesAppAngular/.
 
+UPDATED: The API I used is no longer offering service, so although the code is OK and the web app worked well, the information from the server will not ever arrive, so you will not be able to check the information of the countries I develop the app to access to. I am sorry about it.
+
 # What can you do with this web app? :thinking:
 
 This web app enables you to do:
